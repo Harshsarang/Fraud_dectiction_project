@@ -1,74 +1,65 @@
-Fraud Detection Project
-📌 Introduction and Objectives
+# 💳 Fraud Detection System
 
-The objective of this project is to build a robust fraud detection system that can identify fraudulent transactions with high accuracy while minimizing false positives. Fraudulent activities in financial transactions lead to significant monetary losses, making it crucial to develop data-driven solutions to detect and prevent such risks in real time.
+An end-to-end Machine Learning project designed to identify potentially fraudulent financial transactions using classification algorithms. The project covers data analysis, model development, API development, Docker containerization, and AWS deployment.
 
-📂 Dataset Analysis
+## 🎯 Project Objectives
 
-The dataset contains transaction-level details including features that help distinguish between legitimate and fraudulent activities.
+- Identify fraudulent financial transactions.
+- Minimize false positives while improving fraud detection.
+- Compare multiple Machine Learning algorithms.
+- Develop an API that accepts transaction details and returns predictions.
 
-Data preprocessing steps included handling missing values, encoding categorical variables, and balancing the dataset using oversampling/undersampling techniques.
+## 📊 Data Analysis & Preprocessing
 
-Feature scaling was applied where necessary to ensure optimal performance of machine learning models.
+- Performed Exploratory Data Analysis (EDA) to understand transaction patterns.
+- Handled missing values and encoded categorical variables.
+- Applied sampling techniques to address class imbalance.
+- Performed feature scaling where required.
+- Analysed features associated with fraudulent transactions.
 
-🔎 Exploratory Data Analysis (EDA)
+## 🤖 Machine Learning Models
 
-Analyzed transaction patterns and distributions across different classes.
+Implemented and compared:
 
-Identified correlations between features and fraudulent activities.
+- Logistic Regression
+- Random Forest Classifier
+- Gradient Boosting
+- XGBoost
 
-Visualized fraud vs. non-fraud transactions to uncover class imbalance.
+Models were evaluated using Accuracy, Precision, Recall, F1-score, ROC-AUC, and Confusion Matrix.
 
-Highlighted anomalies and feature importance trends that impact fraud detection.
+## 🚀 Deployment
 
-🤖 Model Development
+The trained model was integrated with a FastAPI backend and deployed on AWS using Docker.
 
-Implemented and compared multiple machine learning models:
+- **FastAPI:** Developed REST API endpoints to receive transaction details and return fraud predictions.
+- **Docker:** Containerized the application and its dependencies.
+- **AWS:** Deployed the Dockerized FastAPI application on an AWS server.
+- **Streamlit:** Developed an interactive frontend. Integration with the AWS-hosted API is currently in progress.
 
-Logistic Regression – as a baseline model.
+## 🔗 Live API
 
-Random Forest Classifier – to capture non-linear relationships.
+**FastAPI Swagger Documentation:**
 
-Gradient Boosting – for improved predictive performance.
+[Fraud Detection API](http://16.171.255.195:8001/docs)
 
-XGBoost – optimized boosting technique for high efficiency and accuracy.
+The API can be explored and tested through its Swagger documentation.
 
-Hyperparameter tuning (GridSearchCV/RandomizedSearchCV) was applied to optimize model performance.
+## 🛠️ Technologies Used
 
-📊 Performance Evaluation
+- **Programming:** Python
+- **Data Analysis:** Pandas, NumPy, Matplotlib, Seaborn
+- **Machine Learning:** Scikit-learn, XGBoost
+- **Backend:** FastAPI
+- **Frontend:** Streamlit (integration in progress)
+- **Containerization:** Docker
+- **Cloud Deployment:** AWS
+- **Development:** Jupyter Notebook, VS Code
 
-Models were evaluated using the following metrics:
+## 💡 Key Takeaways
 
-Accuracy – overall correctness.
-
-Precision & Recall – to balance detection and false alarms.
-
-F1-Score – harmonic mean of precision and recall.
-
-ROC-AUC Score – to assess classification ability under imbalance.
-
-Confusion matrices were plotted to visualize model performance on fraud vs. non-fraud predictions.
-
-💰 Financial Impact Analysis
-
-Assessed the potential savings achieved by correctly identifying fraudulent transactions.
-
-Estimated monetary loss reduction by applying the model in real-world scenarios.
-
-Showed how improved detection contributes to cost savings and risk mitigation.
-
-✅ Key Insights
-
-XGBoost and Gradient Boosting achieved the highest recall and ROC-AUC, making them the most effective models for fraud detection.
-
-Proper handling of class imbalance significantly improved fraud detection rates.
-
-Financial analysis demonstrated that the model can substantially reduce potential fraud-related losses.
-
-🚀 Technologies Used
-
-Python (pandas, numpy, matplotlib, seaborn, scikit-learn, xgboost)
-
-Jupyter Notebook for analysis and visualization
-
-Machine Learning Algorithms (Logistic Regression, Random Forest, Gradient Boosting, XGBoost)
+- Experience in handling imbalanced financial datasets.
+- Comparison of multiple Machine Learning classification algorithms.
+- Integration of ML models with REST APIs.
+- Practical experience in Docker containerization and AWS deployment.
+- Understanding the process of developing and deploying an ML-based application.
